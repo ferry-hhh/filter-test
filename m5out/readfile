@@ -1,0 +1,1 @@
+m5 exit;cd ../home/cxl_benchmark;echo 'This is running on Timing CPU cores.';./benchmark.sh;
