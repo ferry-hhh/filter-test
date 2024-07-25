@@ -5,21 +5,16 @@ BIOS-provided physical RAM map:
 BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
 BIOS-e820: [mem 0x000000000009fc00-0x00000000000fffff] reserved
 BIOS-e820: [mem 0x0000000000100000-0x000000007fffffff] usable
-BIOS-e820: [mem 0x00000000ffff0000-0x00000000ffffffff] reserved
+BIOS-e820: [mem 0x000000] reserved
+BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
+BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
+BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
+BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
 BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
 printk: bootconsole [earlyser0] enabled
 NX (Execute Disable) protection: active
 SMBIOS 2.5 present.
 DMI:  , BIOS  06/08/2008
-tsc: Fast TSC calibration using PIT
-tsc: Detected 2100.792 MHz processor
-last_pfn = 0x180000 max_arch_pfn = 0x400000000
-Disabled
-x86/PAT: MTRRs disabled, skipping PAT initialization too.
-CPU MTRRs all blank - virtualized system.
-x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
-last_pfn = 0x80000 max_arch_pfn = 0x400000000
-found SMP MP-table at [mem 0x000f0050-0x000f005f]
 ACPI: Early table checksum verification disabled
 ACPI: RSDP 0x00000000000F02E0 000024 (v02 gem5  )
 ACPI: XSDT 0x00000000000F05C8 00002C (v01 gem5            00000000      00000000)
@@ -402,11 +397,13 @@ See 'systemctl status networkd-dispatcher.service' for details.
 [[0;32m  OK  [0m] Started Stop ureadahead data collection 45s after completed startup.
          Starting Update UTMP about System Runlevel Changes...
 [[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
-
+
+
 Ubuntu 18.04.2 LTS gem5-host ttyS0
 
 gem5-host login: root (automatic login)
-
+
+
 Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 5.4.49+ x86_64)
 
  * Documentation:  https://help.ubuntu.com
